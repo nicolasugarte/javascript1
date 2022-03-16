@@ -1,0 +1,124 @@
+VARIABLE: Espacio que guardamos en la memoria para usarlo de vuelta.
+3 formas de declarala var, let, const
+LET Menos alcance
+VAR alcance global
+CONST No puede cambiar su valor. Ej: se establece una vez y queda para siempre esa variable. 
+STRING: Cadena de texto '' o ""
+NUMBER: Numero, no va entre comillas. va solo numero. 
+BOOLEAN: True/false
+
+"undefined" existe la variable, esta declarada pero no tiene valor
+"null" aca la variable esta declarada vacia a propososito
+"Nan" Not a number
+
+¿como se declara?
+para LET o VAR
+let numero;
+numero = 29
+alert (numero)
+
+otra manera
+let numero = 29;
+alert (numero)
+
+
+para CONST
+Siempre 
+const numero = 2;
+
+siempre al final de cada linea, punto y coma (;)
+
+una buena forma de trabajar con variables es todas juntas. Por ej;
+let numero, numero2, numero3;
+numero = 5
+numero2 = 10
+numero3 = 15
+tambien se puede declararlas en la misma linea separandolas por coma.
+
+
+El scope es el alcance de las variables. cuanto abarcan.
+
+CONCATENAR: JUNTAMOS CADENAS DE TEXTO. uNIR STRINGS
+
+Prompt ("completa tu nombre") para que quede guardada la respuesta del campo se hace lo siguiente:
+let nombre = prompt("Completa tu nombre")
+
+OEPRADORES DE ASIGNACION Y ARITMETICOS
+OPERADORES ARITMETICOS: Toman valores numericos y retornan valor numerico unico.
+OPERADOR DE ASIGNACION: Asigna un valor al operando de la izquierda basado en el valor del operando de la derecha
+ej:
+let numero= 10
+numero + = 5
+document.write (numero)-> 15
+
+OPERADORES DE COMPARACION: Comparan dos expresiones y devuelven un valor "Boolean" que representa la relacion de sus valores.
+Se basan en true o false (==, !=, etc. Googlear los distintos operadores de comparacion)
+OPERADORES LOGICOS: Nos devuelven un resultado a partir de que se cumpla una condicion, su resultado es booleano (true o false) y sus operandos son valores logicos.
+Ej: AND (&&) OR(||) NOT (!) -1:24 youtube Dalto-
+
+CONDICIONALES
+Los bloques se ejecutan si se da una condicion. 
+ej:
+if (10<15) {
+    alert "menor")
+}
+
+EJERCICIOS
+dineroCofla = prompt("Cuanto dinero tenes Cofla?");
+dineroRoberto = prompt("Cuanto dinero tenes Roberto?");
+dineroPedro = prompt("Cuanto dinero tenes Pedro?");
+
+if (dineroCofla >= 0.6 && dineroCofla < 1) {
+    alert("Cofla Comprate el helado de agua")
+} else if (dineroCofla >= 1 && dineroCofla < 1.6) {
+    alert("Cofla Comprate el helado de crema")
+} else if (dineroCofla >= 1.6 && dineroCofla < 1.7) {
+    alert("Cofla comprate el bombon helado")
+} else if (dineroCofla >= 1.7 && dineroCofla < 1.8) {
+    alert("Cofla comprate el 1/4 de kilo")
+} else if (dineroCofla >= 1.8 && dineroCofla < 2.9) {
+    alert("Cofla comprate el 1/2 kilo")
+} else if (dineroCofla >= 2.9) {
+    alert("Cofla comprate lo que se te cante")
+} else {
+    alert ("Cofla no tenes suficiente dinero, raja de aca")
+}
+
+if (dineroRoberto >= 0.6 && dineroRoberto < 1) {
+    alert(" Roberto Comprate el helado de agua")
+} else if (dineroRoberto >= 1 && dineroRoberto < 1.6) {
+    alert("Roberto Comprate el helado de crema")
+} else if (dineroRoberto >= 1.6 && dineroRoberto < 1.7) {
+    alert("Roberto comprate el bombon helado")
+} else if (dineroRoberto >= 1.7 && dineroRoberto < 1.8) {
+    alert("Roberto comprate el 1/4 de kilo")
+} else if (dineroRoberto >= 1.8 && dineroRoberto < 2.9) {
+    alert("Roberto comprate el 1/2 kilo")
+} else if (dineroRoberto >= 2.9) {
+    alert("Roberto comprate lo que se te cante")
+} else {
+    alert("Roberto No tenes suficiente dinero, raja de aca")
+}
+
+if (dineroPedro >= 0.6 && dineroPedro < 1) {
+    alert(" Pedro Comprate el helado de agua")
+} else if (dineroPedro >= 1 && dineroPedro < 1.6) {
+    alert("Pedro Comprate el helado de crema")
+} else if (dineroPedro >= 1.6 && dineroPedro < 1.7) {
+    alert("Pedro comprate el bombon helado")
+} else if (dineroPedro >= 1.7 && dineroPedro < 1.8) {
+    alert("Pedro comprate el 1/4 de kilo")
+} else if (dineroPedro >= 1.8 && dineroPedro < 2.9) {
+    alert("Pedro comprate el 1/2 kilo")
+} else if (dineroPedro >= 2.9) {
+    alert("Pedro comprate lo que se te cante")
+} else {
+    alert("Pedro No tenes suficiente dinero, raja de aca")
+}
+
+2DO CAPITULO
+ARRAYS
+en las variables se guarda un dato por variable. 
+En los arrays se puede guardar muchos datos.  
+arrays = ["dato"(0), numero,(1) "dato"(2)];
+document.write(frutas [0 1 o 2]) son las posiciones. 
